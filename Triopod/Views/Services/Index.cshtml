@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--header-->
+
+<div class=" container-fluid pimg border shadow rounded">
+    <h1 class="text-center text-white p-5 m-1">Our Services</h1>
+</div>
+<br>
+<!--CArds-->
+<div class="container bg-white">
+    <h1 class="text-center">
+        <a href="serviceinfo.html"> Services</a>
+    </h1>
+    <hr>
+    <!--Group 1-->
+    <div class="card-group">
+        <div class="card btn-light">
+            <div class="card-body text-center">
+                <h5 class="card-title">Web Design</h5>
+                <hr>
+                <p class="card-text">
+                    <b>Your website represents you.. </b>
+                    <br> Website Design
+                    <br> PSD To XHTML & CSS Conversion
+                    <br> Graphic Design (Coverpage, Logo, Brocer etc.)
+                </p>
+                @Html.ActionLink("View more details", "Info", "Contact", null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="card btn-light">
+            <div class="card-body text-center">
+                <h5 class="card-title">Web Development</h5>
+                <hr>
+                <p class="card-text">
+                    <b>For any online activities... </b>
+                    <br> PSD to XHTML and CSS Conversion
+                    <br> Updating old website to new generation.
+                    <br> Compitable with different Browser.
+                </p>
+                @Html.ActionLink("View more details", "Info", "Contact", null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="card btn-light">
+            <div class="card-body text-center">
+                <h5 class="card-title">Webpage Customizations</h5>
+                <hr>
+                <p class="card-text">
+                    <b>Drive your business in The Fast Track...</b>
+                    <br> Customizing different websites
+                    <br> E-commersesite, Blogs and Forums etc.
+                    <br> Customization web packages
+                </p>
+                @Html.ActionLink("View more details", "Info", "Contact", null, new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--Group 2-->
+    <div class="card-group">
+        <div class="card btn-light">
+            <div class="card-body text-center">
+                <h5 class="card-title">Mobile App</h5>
+                <hr>
+                <p class="card-text">
+                    <b>Bulit your own mobile application.. </b>
+                    <br> iOS and Android app building
+                    <br> Social network app development
+                    <br> Shopping App Development
+                    <br> App UI Development
+                </p>
+                @Html.ActionLink("View more details", "Info", "Contact", null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="card btn-light">
+            <div class="card-body text-center">
+                <h5 class="card-title">Digital Marketing</h5>
+                <hr>
+                <p class="card-text">
+                    <b>Your website represents you.. </b>
+                    <br> SEO Service
+                    <br> Social Media Marketing
+                    <br> PPC Services
+                </p>
+                @Html.ActionLink("View more details", "Info", "Contact", null, new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="card btn-light">
+            <div class="card-body text-center">
+                <h5 class="card-title">Graphics Design</h5>
+                <hr>
+                <p class="card-text">
+                    <b>Your website represents you.. </b>
+                    <br> Website Design
+                    <br> PSD To XHTML & CSS Conversion
+                    <br> Graphic Design (Coverpage, Logo, Brocer etc.)
+                </p>
+                @Html.ActionLink("View more details", "Info", "Contact", null, new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <br>
+</div>

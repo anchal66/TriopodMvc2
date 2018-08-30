@@ -1,0 +1,134 @@
+.btn-outline-orange {
+    color: #FF4800 !important;
+    background: linear-gradient(to bottom, white, #C4C4C4);
+    
+    border-color:#FF4800;
+  }
+  
+  .btn-outline-orange:hover {
+    color: gray !important;
+    background: linear-gradient(#FF4800, #FFB05D, #FF4800);
+    border-color: #FF4800;
+  }
+  
+  .btn-outline-orange:focus, .btn-outline-orange.focus {
+    box-shadow: 0 0 0 0.2rem #FF4800;
+  }
+  
+  .btn-outline-orange.disabled, .btn-outline-orange:disabled {
+    color: #FF4800;
+    background-color: transparent;
+  }
+  
+  .btn-outline-orange:not(:disabled):not(.disabled):active, .btn-outline-orange:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-orange.dropdown-toggle {
+    color: #fff !important;
+    background-color: #FF4800;
+    border-color: #FF4800;
+  }
+  
+  .btn-outline-orange:not(:disabled):not(.disabled):active:focus, .btn-outline-orange:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-outline-orange.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #FF4800;
+  }
+  #footer p{
+      font-size: 15px;
+  }
+  a{
+    text-decoration: none;
+    color: unset;
+  }
+  a:link {
+    text-decoration: none;
+    color: unset;
+}
+
+a:visited {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+    color: unset;
+}
+.btn-outline-orange2 {
+  color: #FF4800;
+  background: linear-gradient(to bottom, white, #C4C4C4);
+  
+  border-color:#FF4800;
+}
+
+.btn-outline-orange2:hover {
+  color: black;
+  background: linear-gradient(to bottom , #C4C4C4, white);
+  border-color: #FF4800;
+}
+
+.btn-outline-orange2:focus, .btn-outline-orange.focus {
+  box-shadow: 0 0 0 0.2rem #FF4800;
+}
+
+.btn-outline-orange2.disabled, .btn-outline-orange:disabled {
+  color: #FF4800;
+  background-color: transparent;
+}
+
+.btn-outline-orange2:not(:disabled):not(.disabled):active, .btn-outline-orange:not(:disabled):not(.disabled).active,
+.show > .btn-outline-orange.dropdown-toggle {
+  color: #fff;
+  background-color: FF4800;
+  border-color: #FF4800;
+}
+
+.btn-outline-orange2:not(:disabled):not(.disabled):active:focus, .btn-outline-orange:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-orange.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #FF4800;
+}
+#recent .active{
+  color:red;
+}
+.pimg{
+  background-image: url("../images/carousel/1.jpg");
+  position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: auto;
+    opacity: 0.9;
+}
+.navbar-brand img{
+  width: 250px;
+}
+#carouselExampleFade{
+  height: 400px;
+}
+#carouselExampleFade img{
+  height: 400px;
+  position: relative;
+  background-attachment: fixed;
+}
+.fab {
+  color: #fff !important;
+}
+.bg-orange{
+  background-color: #FF4800
+}
+.text-orange{
+  color: #FF4800
+}
+@media screen and (max-width: 575.9px) {
+  .navbar-brand img{
+    width: 170px;
+  }
+  #carouselExampleFade{
+    height: 230px;
+  }
+  #carouselExampleFade img{
+    height: 230px;
+  }
+}
