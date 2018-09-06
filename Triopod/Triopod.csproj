@@ -47,6 +47,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.DependencyCollector, Version=2.7.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.7.2\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
     </Reference>
@@ -154,16 +160,102 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\Enquiry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\all.css" />
+    <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\1.jpg" />
+    <Content Include="Content\Images\2.jpg" />
+    <Content Include="Content\Images\3.jpg" />
+    <Content Include="Content\Images\7.jpg" />
+    <Content Include="Content\Images\banner\aboutus.png" />
+    <Content Include="Content\Images\banner\blog.png" />
+    <Content Include="Content\Images\banner\contact.png" />
+    <Content Include="Content\Images\banner\details.png" />
+    <Content Include="Content\Images\banner\portfolio.png" />
+    <Content Include="Content\Images\banner\services.png" />
+    <Content Include="Content\Images\blockRepeat.png" />
+    <Content Include="Content\Images\blog\1.jpg" />
+    <Content Include="Content\Images\blog\2.jpg" />
+    <Content Include="Content\Images\blog\3.jpg" />
+    <Content Include="Content\Images\blog\4.jpg" />
+    <Content Include="Content\Images\blog\5.jpg" />
+    <Content Include="Content\Images\blog\6.jpg" />
+    <Content Include="Content\Images\body.png" />
+    <Content Include="Content\Images\carousel\1.jpg" />
+    <Content Include="Content\Images\carousel\2.jpg" />
+    <Content Include="Content\Images\carousel\3.jpg" />
+    <Content Include="Content\Images\carousel\4.jpg" />
+    <Content Include="Content\Images\carousel\5.jpg" />
+    <Content Include="Content\Images\carousel\6.jpg" />
+    <Content Include="Content\Images\clients\facebookLogo.jpg" />
+    <Content Include="Content\Images\clients\googleLogo.jpg" />
+    <Content Include="Content\Images\clients\my_web_solution.jpg" />
+    <Content Include="Content\Images\clients\twitterLogo.jpg" />
+    <Content Include="Content\Images\facebook.png" />
+    <Content Include="Content\Images\favicon.png" />
+    <Content Include="Content\Images\footerbg.png" />
+    <Content Include="Content\Images\footerRepeat.png" />
+    <Content Include="Content\Images\headerbg.png" />
+    <Content Include="Content\Images\headerRepeat.png" />
+    <Content Include="Content\Images\icon1.png" />
+    <Content Include="Content\Images\icon10.png" />
+    <Content Include="Content\Images\icon11.png" />
+    <Content Include="Content\Images\icon12.png" />
+    <Content Include="Content\Images\icon13.png" />
+    <Content Include="Content\Images\icon14.png" />
+    <Content Include="Content\Images\icon15.png" />
+    <Content Include="Content\Images\icon16.png" />
+    <Content Include="Content\Images\icon17.png" />
+    <Content Include="Content\Images\icon18.png" />
+    <Content Include="Content\Images\icon2.png" />
+    <Content Include="Content\Images\icon3.png" />
+    <Content Include="Content\Images\icon4.png" />
+    <Content Include="Content\Images\icon5.png" />
+    <Content Include="Content\Images\icon6.png" />
+    <Content Include="Content\Images\icon7.png" />
+    <Content Include="Content\Images\icon8.png" />
+    <Content Include="Content\Images\icon9.png" />
+    <Content Include="Content\Images\img180x120.png" />
+    <Content Include="Content\Images\img185x165.png" />
+    <Content Include="Content\Images\img64x64.png" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\onepx.png" />
+    <Content Include="Content\Images\portfolio\1.jpg" />
+    <Content Include="Content\Images\portfolio\10.jpg" />
+    <Content Include="Content\Images\portfolio\11.jpg" />
+    <Content Include="Content\Images\portfolio\12.jpg" />
+    <Content Include="Content\Images\portfolio\13.jpg" />
+    <Content Include="Content\Images\portfolio\2.jpg" />
+    <Content Include="Content\Images\portfolio\3.jpg" />
+    <Content Include="Content\Images\portfolio\4.jpg" />
+    <Content Include="Content\Images\portfolio\5.jpg" />
+    <Content Include="Content\Images\portfolio\6.jpg" />
+    <Content Include="Content\Images\portfolio\7.jpg" />
+    <Content Include="Content\Images\portfolio\8.jpg" />
+    <Content Include="Content\Images\portfolio\9.jpg" />
+    <Content Include="Content\Images\portfolio\coming_soon.jpg" />
+    <Content Include="Content\Images\portfolio\mywebsolution.jpg" />
+    <Content Include="Content\Images\process.png" />
+    <Content Include="Content\Images\rss.png" />
+    <Content Include="Content\Images\rv.png" />
+    <Content Include="Content\Images\shadow.png" />
+    <Content Include="Content\Images\shadows.png" />
+    <Content Include="Content\Images\shadowsReverse.png" />
+    <Content Include="Content\Images\smallShadows.png" />
+    <Content Include="Content\Images\tabrepeat.png" />
+    <Content Include="Content\Images\tabRepeatInactive.png" />
+    <Content Include="Content\Images\twitter.png" />
+    <Content Include="Content\Images\youtube.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -241,10 +333,13 @@
     <Content Include="Views\Carrer\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Project\Index.cshtml" />
+    <Content Include="Views\Home\ViewEnquiry.cshtml" />
+    <Content Include="Views\Home\DeleteEnquiry.cshtml" />
+    <Content Include="Views\Home\Enquiry.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\" />
+    <Folder Include="Content\Images\portfolio - Copy\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

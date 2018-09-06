@@ -8,6 +8,9 @@ namespace Triopod.Models
 {
     public class Enquiry
     {
+        [Key]
+        public int EnquiryId { get; set; }
+
         [Required(ErrorMessage ="Enter Name")]
         [Display(Name ="Name")]
         public string Name { get; set; }
@@ -25,5 +28,7 @@ namespace Triopod.Models
         [Display(Name = "Enter Your Message:")]
         [StringLength(1000)]
         public string Message { get; set; }
+
+        public DateTime DateTime { get; set; }
     }
 }
